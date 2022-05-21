@@ -1,10 +1,10 @@
 @font-face {
   font-family: 'icons';
-  src:  url('fonts/icons.eot?vile0z');
-  src:  url('fonts/icons.eot?vile0z#iefix') format('embedded-opentype'),
-    url('fonts/icons.ttf?vile0z') format('truetype'),
-    url('fonts/icons.woff?vile0z') format('woff'),
-    url('fonts/icons.svg?vile0z#icons') format('svg');
+  src:  url('fonts/icons.eot?1amw9l');
+  src:  url('fonts/icons.eot?1amw9l#iefix') format('embedded-opentype'),
+    url('fonts/icons.ttf?1amw9l') format('truetype'),
+    url('fonts/icons.woff?1amw9l') format('woff'),
+    url('fonts/icons.svg?1amw9l#icons') format('svg');
   font-weight: normal;
   font-style: normal;
   font-display: block;
@@ -25,6 +25,33 @@ i {
   -moz-osx-font-smoothing: grayscale;
 }
 
-.ic_check_solid:before {
+.ic_solid:before {
   content: "\e900";
+}
+.ic_solid1:before {
+  content: "\e901";
+}
+.ic_solid2:before {
+  content: "\e902";
+}
+.ic_solid3:before {
+  content: "\e903";
+}
+.ic_solid4:before {
+  content: "\e904";
+}
+.ic_solid5:before {
+  content: "\e905";
+}
+.ic_solid6:before {
+  content: "\e906";
+}
+.ic_solid7:before {
+  content: "\e907";
+}
+.ic_solid9:before {
+  content: "\e908";
+}
+.ic_check_solid:before {
+  content: "\e909";
 }

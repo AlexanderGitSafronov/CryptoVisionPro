@@ -3,11 +3,10 @@ body {
   box-sizing: border-box;
   font-family: roboto, sans-serif;
   color: #fff;
-  background-color: #0f1015;
+  background-color: #080a0f;
 }
 .hero {
   position: relative;
-  margin: 0% 0px 12% 0px;
   height: 100vh;
   display: flex;
   flex-direction: column;
@@ -15,21 +14,16 @@ body {
 }
 .video_bg {
   position: fixed;
-  /* width: 100%;
-  height: 100%; */
+  padding-top: 50px;
   left: 0;
   right: 0;
-
-
   z-index: -1;
-  background-color: #0f1015;
+  background-color: #080a0f;
   overflow: hidden;
-
 }
 .video_bg video {
   width: 100%;
   height: auto;
-
 }
 
 .video_overlay {
@@ -45,22 +39,26 @@ body {
   position: relative;
   margin: 4% 0px 12% 0px;
 }
-
-.languages {
- text-align: right;
- 
+.position_logo_lang {
+  display: none;
 }
-.languages a{
-    text-decoration: none;
-    color: #fff;
-    margin-left: 1vw;
-    font-size: 1.1em;
+.languages {
+  text-align: right;
+}
+.first_text_mobile p {
+  text-align: left;
+}
+.languages a {
+  text-decoration: none;
+  color: #fff;
+  margin-left: 1vw;
+  font-size: 1.1em;
 }
 .languages a:hover {
-    color: #3db3a8;
+  color: #3db3a8;
 }
-.languages .active{
-    color: #3db3a8;
+.languages .active {
+  color: #3db3a8;
 }
 .first_text {
   display: inline-block;
@@ -68,31 +66,22 @@ body {
   font-weight: 600;
   color: #3db3a8;
 }
-.first_text p {
-  margin: -5px 0px;
-  letter-spacing: 0.1em;
-}
 .first_text img {
-max-width: 80px;
-
+  max-width: 80px;
 }
-
+.first_text p {
+  margin: -1vh 0px;
+  text-transform: uppercase;
+}
 .header_content_text h2 {
-  margin-top: 8px;
-  margin-bottom: 35px;
-  font-size: 2em;
+  text-transform: uppercase;
+  padding-top: 8px;
+  padding-bottom: 35px;
+  font-size: 2.2em;
   font-weight: 600;
-  letter-spacing: 0.2em;
   line-height: 1.5em;
 }
-.check {
-  display: flex;
-  color: #3db3a8;
-  justify-content: center;
-  margin-top: -1.8vw;
-  margin-left: 1vw;
-  font-size: 4em;
-}
+
 .header_circle {
   display: flex;
   margin-top: 20px;
@@ -101,11 +90,21 @@ max-width: 80px;
   margin-right: 25px;
 }
 .circle {
+  position: relative;
   width: 50px;
   height: 50px;
   border: 2px solid #fff;
   border-radius: 50%;
   box-shadow: 0px 0px 5px 3px #7c788b;
+}
+.check {
+  position: absolute;
+  display: flex;
+  color: #3db3a8;
+  justify-content: center;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 4em;
 }
 .header_circle p {
   line-height: 1.5em;
@@ -113,54 +112,83 @@ max-width: 80px;
 .header_content_image {
   position: sticky;
   top: 32px;
-  margin-top: 2vw;
 }
 .header_content_image img {
-  max-width: 90%;
+  width: 100%;
   height: auto;
   border-radius: 40px;
   box-shadow: 1px 1px 10px 2px #b54bc9;
   animation: rotates 1s linear infinite alternate;
 }
 @keyframes rotates {
- 0% {
-     transform: rotate(8deg);
- }
+  0% {
+    transform: rotate(8deg);
+  }
 
-50% {
+  50% {
     transform: rotate(0deg);
-}
+  }
 
-100% {
+  100% {
     transform: rotate(-8deg);
+  }
 }
+.header_button_position {
+  margin-top: 50px;
 }
 
-.header_button {
-  margin-top: 50px;
+.button_btn {
   text-align: center;
+  padding: 10px 0px 20px 0px;
 }
-.header_button a {
-  text-decoration: none;
+
+.button_btn button {
+  display: inline-block;
   background-color: #3db3a8;
-  padding: 15px 50px;
-  color: #000;
+  padding: 12px 38px;
   border: 2px solid #fff;
   border-radius: 10px;
   font-weight: 600;
-  box-shadow: 1px 1px 15px 5px #3db3a8;
-  transition: 0.5s ease all;
+  box-shadow: 1px 1px 15px 6px #3db3a8;
+  color: #000;
+  text-transform: uppercase;
+  animation: scale 1.5s linear infinite alternate;
 }
-.header_button a:hover {
-    background-color: #b54bc9;
-    box-shadow: 1px 1px 15px 5px #b54bc9;
+
+.button_btn button:hover {
+  background-color: #b54bc9;
+  box-shadow: 1px 1px 15px 5px #b54bc9;
+  animation: scale2 1s linear infinite alternate;
 }
+@keyframes scale {
+  0% {
+    box-shadow: 1px 1px 15px 6px #3db3a8;
+  }
+  50% {
+    box-shadow: 1px 1px 10px 0px #3db3a8;
+  }
+  100% {
+    box-shadow: 1px 1px 15px 6px #3db3a8;
+  }
+}
+@keyframes scale2 {
+  0% {
+    box-shadow: 1px 1px 15px 6px #b54bc9;
+  }
+  50% {
+    box-shadow: 1px 1px 10px 0px #b54bc9;
+  }
+  100% {
+    box-shadow: 1px 1px 15px 6px #b54bc9;
+  }
+}
+
 .main_second {
   margin-top: 15vh;
 }
 .head_text {
   text-align: center;
-  margin-bottom: 10vh;
+  margin-bottom: 8vh;
   color: #b54bc9;
 }
 .head_text h2 {
@@ -168,20 +196,23 @@ max-width: 80px;
   font-size: 30px;
   margin-bottom: 1vw;
   color: #3db3a8;
+  text-transform: uppercase;
 }
 
 .head_discription p {
-
   text-align: justify;
 }
-
+.main_content_image {
+  position: sticky;
+  top: 32px;
+}
 .main_content_image img {
-  
   width: 100%;
   border-radius: 10px;
   box-shadow: 1px 1px 10px 2px #b54bc9;
   height: auto;
 }
+
 .main_content_text {
   padding-left: 5vw;
 }
@@ -212,6 +243,32 @@ max-width: 80px;
   margin-top: 25px;
   height: calc(100% - 25px);
 }
+
+.position_b_span span {
+  text-align: justify;
+  display: block;
+  line-height: 1.4em;
+}
+.my_block b {
+  text-transform: uppercase;
+  text-align: center;
+}
+.position_b b {
+  display: block;
+  text-align: center;
+  padding-bottom: 4px;
+}
+.leter {
+  text-align: center;
+  margin-bottom: 10px;
+}
+.leter span {
+  color: #3db3a8;
+  text-align: center;
+  border: 1px solid #fff;
+  border-radius: 50%;
+  padding: 5px 10px;
+}
 .intro_border {
   padding: 40px;
   border: 5px solid #3db3a8;
@@ -219,59 +276,67 @@ max-width: 80px;
   box-shadow: inset -1px 1px 20px 1px #3db3a8;
 }
 .color_for_block h2 {
-  font-size: 1.7em;
+  font-size: 1.6em;
+  text-align: center;
   color: #fff;
-  
+  text-transform: uppercase;
 }
 .color_for_block h3 {
+  text-align: center;
   color: #fff;
-  
-  /* line-height: 0.5em; */
+  text-transform: uppercase;
+
   margin-top: 1.3em;
 }
 .color_for_block p {
-  text-align: justify;
+  text-align: center;
 }
 .image_for_block {
   position: sticky;
   top: 32px;
-  padding: 40px 0px;
   border: 1px solid #3db3a8;
   box-shadow: -2px -3px 20px -2px #3db3a8;
-  border-radius: 15px;
 }
-
+.image_for_block img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 12px 0px;
+  height: auto;
+  border-radius: 20px;
+}
 .for_button a {
   box-shadow: 1px 1px 15px 5px #3db3a8;
   background-color: #3db3a8;
 }
-
 /* Carousel */
 .my_carousel {
-    box-shadow: 0px 0px 10px 4px #3db3a8;
+  box-shadow: 0px 0px 10px 4px #3db3a8;
 }
 .my_carousel .carousel-item {
   /* height: 80vh; */
 }
-
+.my_carousel_text {
+  font-size: 16px;
+}
+.my_carousel_text p {
+  margin-bottom: 0;
+}
+.my_carousel_text h5 {
+  font-size: 1em;
+  text-transform: uppercase;
+}
 .bg_photo {
-    background-color: rgba(49, 47, 47, 0.8);
-    border-radius: 10px;
-  
+  background-color: rgba(49, 47, 47, 0.6);
+  border-radius: 10px;
 }
 
 .block_position {
   margin-left: 0px;
 }
-.block_position img {
-  border-radius: 10px;
-  width: 98%;
-  margin-left: 0.2vw;
-  margin-top: -2.5vw;
-}
+
 .position_text {
   margin-top: 4vw;
-  
 }
 
 .position_text p {
@@ -282,53 +347,55 @@ max-width: 80px;
 }
 
 .position_text_money p {
-    margin-bottom: 2vw;
+  margin-bottom: 2vw;
 }
-.img_money_position img{
-    margin-top: 5vw;
-    box-shadow: 1px 1px 10px 2px #b54bc9;
-    animation: rotates 1s linear infinite alternate;
+.img_money_position {
+  padding-top: 32px;
+}
+.img_money_position img {
+  box-shadow: 1px 1px 10px 2px #b54bc9;
+  border-radius: 10px;
+  width: 100%;
+  height: auto;
 }
 .position_text_left {
-    text-align: left;
+  text-align: left;
 }
 .position_text span {
-    font-weight: 700;
-    font-size: 1em;
+  font-weight: 700;
+  font-size: 1em;
 }
 .last_block_position {
   margin-left: 0;
-
 }
 .last_block_position a {
   padding: 15px 30px;
 }
 .last_block_text h2 {
-    font-size: 29px;
+  font-size: 29px;
 }
 .last_button {
-    margin-top: 0.5vw;
+  margin-top: 0.5vw;
 }
 .last_button img {
-    margin-top: -2.5vw;
-    border-radius: 10px;
-    width: 98%;
-    margin-left: 0.2vw;
-    padding-bottom: 50px;
+  margin-top: -2.5vw;
+  border-radius: 10px;
+  width: 98%;
+  margin-left: 0.2vw;
+  padding-bottom: 50px;
 }
 .exchenge_header {
-    color: #3db3a8;
+  color: #3db3a8;
 }
 
 .exchange {
-    margin-top: 2vw;
+  margin-top: 4vw;
 }
-.exchange  div {
-    width: 20%;
-    padding: 4.6rem;
-    height: 11.25rem;
-    margin: 0;
-    border: 1px solid #3db3a8;
-    background-color: rgba(49, 47, 47, 0.6)
+.exchange div {
+  width: 20%;
+  padding: 4.6rem;
+  height: 11.25rem;
+  margin: 0;
+  border: 1px solid #3db3a8;
+  background-color: rgba(31, 29, 29, 0.5);
 }
-
