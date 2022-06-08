@@ -53,6 +53,22 @@
 }
 
 @media (max-width: 767px) {
+  .head_discription_money {
+    display: none;
+  }
+  .head_discription_money_op {
+    display: block;
+  }
+  .money_save {
+    display: none;
+  }
+  .head_discription_money {
+    margin-top: -1vh;
+  }
+  
+  .money_save_op {
+    display: block;
+  }
   .pos_leng {
     display: none;
   }
