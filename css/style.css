@@ -24,8 +24,21 @@ body {
 .video_bg video {
   width: 100%;
   height: auto;
+  /* animation: 3s fadeIn;
+  animation-fill-mode: forwards;
+  visibility: hidden; */
 }
-
+/* @keyframes fadeIn {
+  99% {
+    visibility: hidden;
+  }
+  100% {
+    visibility: visible;
+  }
+} */
+.hidden {
+  display: none;
+}
 .video_overlay {
   position: absolute;
   background-color: rgba(0, 0, 0, 0.6);
@@ -301,6 +314,14 @@ body {
 }
 .color_for_block p {
   text-align: center;
+  font-size: 18px;
+}
+.six_sectipn_p {
+  margin-top: 20px;
+  padding-top: 20px;
+}
+.color_for_block .six_sectipn_p p {
+  font-size: 20px;
 }
 .image_for_block {
   position: sticky;
@@ -417,9 +438,9 @@ body {
 }
 .position_b_span h6 {
   margin-top: 2vh;
-    text-align: center;
-    font-size: 18px;
-    text-transform: uppercase;
+  text-align: center;
+  font-size: 18px;
+  text-transform: uppercase;
 }
 .position_b_span h6 span {
   text-align: center;
