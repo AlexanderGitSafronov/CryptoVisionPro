@@ -1,4 +1,22 @@
+@media (max-width: 1399px) {
+  .block__card::after {
+    width: 302px;
+  }
+}
 @media (max-width: 1199px) {
+  .section__plus {
+    margin-left: 5px;
+  }
+  .block__card::after {
+    width: 244px;
+  }
+  .block__card_price_deposit p {
+    font-size: 12px;
+  }
+  .block_card_button a {
+    width: 194px;
+    font-size: 14px;
+  }
   .video_bg {
     padding-top: 0px;
   }
@@ -18,13 +36,27 @@
     font-size: 0.9em;
   }
   .button_btn button {
-    padding: 15px 40px;
+    padding: 15px 17px;
   }
   .header_button_position button {
     padding: 15px 50px;
   }
 }
 @media (max-width: 991px) {
+  .section__plus {
+    margin-left: 0px;
+  }
+  .block_card_button a {
+    width: 194px;
+    font-size: 14px;
+  }
+  .block__card_wrapper {
+    margin: 15px 130px;
+    margin-top: 50px;
+  }
+  .container__card {
+    margin-top: 100px;
+  }
   .first_text img {
     max-width: 70px;
   }
@@ -53,6 +85,25 @@
 }
 
 @media (max-width: 767px) {
+  .section__plus_image {
+    margin-top: 24px;
+  }
+  .section__plus_image img {
+    max-width: 100%;
+    max-height: 100%;
+  }
+  .img__crypto img {
+    max-width: 100%;
+    max-height: 100%;
+  }
+  .img__hend img {
+    max-width: 50%;
+    max-height: 50%;
+  }
+  .block__card_wrapper {
+    margin: 15px 65px;
+    margin-top: 50px;
+  }
   .head_discription_money {
     display: none;
   }
@@ -134,7 +185,23 @@
     margin: 0;
   }
 }
-
+@media (max-width: 575px) {
+  .section__plus_image{
+    margin-top: 0px;
+  }
+  .section__plus_image img {
+    max-width: 100%;
+    max-height: 100%;
+  }
+  .img__crypto img {
+    max-width: 20%;
+    max-height: 20%;
+  }
+  .img__hend img {
+    max-width: 20%;
+    max-height: 20%;
+  }
+}
 @media (max-width: 540px) {
   .my_carousel_text {
     font-size: 6px;
@@ -188,6 +255,9 @@
   }
 }
 @media (max-width: 437px) {
+  .block__card_wrapper {
+    margin: 15px 36px;
+  }
   .header_content_text h2 {
     font-size: 1.2em;
     margin-bottom: 0px;
@@ -211,7 +281,22 @@
     font-size: 0.9em;
   }
 }
+@media (max-width: 415px) {
+  .block__card_price_deposit p {
+    font-size: 11px;
+  }
+  .block__card_price_first {
+    font-size: 12px;
+  }
+}
 @media (max-width: 398px) {
+  .block_card_button a {
+    
+    font-size: 10px;
+  }
+  .block__card_wrapper {
+    margin: 15px 32px;
+  }
   .header_content_text p {
     font-size: 0.7em;
   }
@@ -256,6 +341,16 @@
     font-size: 0.6em;
   }
 }
+@media (max-width: 359px) {
+  .block__card {
+    padding: 0px 0px;
+  }
+}
+@media (max-width: 350px) {
+  .block__card_wrapper {
+    margin: 15px 22px;
+  }
+}
 @media (max-width: 336px) {
   .languages a {
     font-size: 0.4em;
@@ -266,6 +361,16 @@
   }
 }
 @media (max-width: 321px) {
+  .block_card_button a {
+    width: 161px;
+    font-size: 10px;
+  }
+  .block__card_wrapper {
+    padding-bottom: 118px;
+  }
+  .block__card {
+    padding: 0px 0px;
+  }
   .header_content_text h2 {
     font-size: 0.9em;
   }
